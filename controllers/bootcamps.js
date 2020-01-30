@@ -77,3 +77,5 @@ exports.deleteBootcamp = asyncHandler(async (req, res, next) => {
     .status(200)
     json({ success: true, data: {} });  
 });
+
+
