@@ -11,6 +11,7 @@ connectDB();
 
 // Route File
 const bootcamps = require('./routes/bootcamps');
+const courses = require('./routes/routeCourses');
 
 const app = express();
 // Body parser
@@ -23,6 +24,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // Mount Routes
 app.use('/api/v1/bootcamps', bootcamps);
+app.use('/api/v1/courses', courses);
 
 app.use(errorHandler);
 
